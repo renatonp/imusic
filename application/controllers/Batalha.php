@@ -16,13 +16,13 @@ Class Batalha extends CI_controller
         $this->bM->atualizaPontosVida(1,$vida_humano);
         $this->bM->atualizaPontosVida(2,$vida_orc);
 
-        while($this->bM->pontosVida(1) > 0 || $this->bM->pontosVida(1) > 0){
+        while($this->bM->pontosVida(1) > 0 || $this->bM->pontosVida(2) > 0){
             $dado_inicial_humano = rand(1,20);
             $iniciativa_humano = $dado_inicial_humano + $this->bM->agilidade(1);
 
             $dado_inicial_orc = rand(1,20);
             $iniciativa_orc = $dado_inicial_orc + $this->bM->agilidade(2);
-            
+
             if($iniciativa_humano == $iniciativa_orc){
                 $dado_inicial_humano = rand(1,20);
                 $iniciativa_humano = $dado_inicial_humano + $this->bM->agilidade(1);
