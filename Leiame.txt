@@ -1,0 +1,1 @@
+Para rodar o projeto, basta copiar os arquivos para a pasta raíz do servidor de desenvolvimento, depois importar o conteúdo do arquivo "imusica.sql" para um banco de dados com o mesmo nome e depois rodar a aplicação digitando http://localhost/imusica/ no navegador
